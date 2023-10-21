@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Mettu Nanditha</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Education</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Mettu Nanditha</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        
+          <img
+            src="./assets/1.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Nanditha</h1>
+        
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Nanditha_Mettu (1).pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      
+         
+          <div class="text-container">
+            <p>
+              Motivated third-year Computer Science Engineering student at Chaitanya Bharati Institute of Technology with a passion for leveraging technology to solve real-world problems. Strong foundation in programming languages, data structures, and analytics. Seeking internships to gain practical experience and contribute to the growth of an innovative organization.
+            </p>
+          </div>
+          <h1 class="title">Skills</h1>
+      
+         
+          <div class="text-container">
+            <p>
+ <center>             
+Python | Java | C++ | SQL |  HTML | CSS | JavaScript | MongoDB |Express | NodeJS | React <br>
+Soft Skills:
+Communication |
+Problem-Solving |
+Team Collaboration </center>
+            </p>
+          </div>
+        <br>
+          <h1 class="title">Extracurricular Achievements</h1>
+      <br>
+         
+          <div class="text-container">
+            <center>
+              • Chaitanya ASTRA Club ,Technical member of Satellite team<br>
+              • Secured Second Prize at the Abacus State Level Competition<br>
+              • Won multiple prizes in various drawing competitions
+          </center>
+          </div>
+        
+        
+      
+      
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Education</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Bachelor of Engineering</h2>
+            <div class="article-container">
+              <article>
+              
+                <div>
+                  <h3>Chaitanya Bharathi Institute of Technology</h3>
+                  <p>Computer Science Engineering | CGPA: 9.2</p>
+                </div>
+              
+                
+             
+               
+              
+               
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Intermediate Education</h2>
+            <div class="article-container">
+              <article>
+               
+                <div>
+                  <h3>Sri Chaitanya junior college</h3>
+                  <p>Percentage: 97.6%</p>
+                </div>
+             
+               
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Secondary Education</h2>
+            <div class="article-container">
+              <article>
+              
+                <div>
+                  <h3>Sri Chaitanya High School
+                  </h3>
+                  <p>GPA: 10
+                  </p>
+                </div>
+              
+                
+             
+               
+              
+               
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/simon.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Simon Game</h2>
+            <div class="btn-container">
+              • Created a digital version of the classic Simon Game, testing users' memory and pattern
+              recognition.<br>
+              • Implemented interactive buttons with audio and visual cues.
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/travel.jpg"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Tourist Website</h2>
+            <div class="btn-container">
+              • Developed an interactive tourist information website, offering users an engaging platform to
+              explore destinations, attractions, and activities.<br>
+              • Showcased strong web design and usability skills, ensuring an enjoyable and efficient user
+              experience for travelers.<br>
+              • Provided a valuable tool for travelers and tourists to plan their trips.
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/hand cricket.jpg"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Hand Cricket with Hand Detection 
+            </h2>
+            <div class="btn-container">
+              • Developed a Python-based hand cricket game with real-time hand gesture detection using
+OpenCV.<br>
+• Enabled players to simulate batting and bowling actions by making hand gestures.<br>
+• Showcased proficiency in computer vision and game development.
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:mettunanditha9959@gmail.com">mettunanditha9959@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/nanditha-mettu-1954b626b/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 Mettu Nanditha. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
